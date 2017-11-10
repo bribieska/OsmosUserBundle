@@ -1,0 +1,4 @@
+services:
+#    osmos_user.example:
+#        class: OsmosUserBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
