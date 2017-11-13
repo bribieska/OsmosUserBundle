@@ -1,18 +1,15 @@
 {
-    "name" : "osmosuserbundle",
+    "name" : "osmos/osmos-user-bundle",
     "description" : "A bundle for communicating our own distinct projects with the users micro-service",
     "type" : "symfony-bundle",
+    "license" : ["MIT"],
+    "keywords" : ["OSMOS", "Paysheet", "Outsource"],
     "authors" : [{
         "name" : "Brandon Bribiesca",
         "email" : "brandon@osmos.mx"
     }],
-    "keywords" : [
-        "demo bundle"
-    ],
-    "license" : [
-        "MIT"
-    ],
     "require" : {
+        "php": ">=5.3.2"
     },
     "autoload" : {
         "psr-0" : {
