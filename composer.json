@@ -17,8 +17,7 @@
         }
     },
     "target-dir" : "OsmosUserBundle",
-    "repositories" : [{
-    }],
+    "repositories" : [{ }],
     "extra" : {
     "branch-alias" : {
             "dev-master" : "master"
