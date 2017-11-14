@@ -1,14 +1,14 @@
 # OsmosUserBundle
 
-Well, at first! We need to type inside our composer.json the lines above
+Well, at first! We need to type inside our composer.json the lines below
 
 ``` javascript
-"require" : {
-    "osmos/osmos-user-bundle" : "dev-master"
+"require": {
+    "osmos/osmos-user-bundle": "dev-master"
 },
-"repositories" : [{
-    "type" : "vcs",
-    "url" : "https://github.com/bribieska/OsmosUserBundle.git"
+"repositories": [{
+    "type": "vcs",
+    "url": "https://github.com/bribieska/OsmosUserBundle.git"
 }]
 ```
 
