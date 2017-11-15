@@ -1,3 +1,4 @@
 services:
     osmos.user:
         class: OsmosUserBundle\Services\User
+        arguments: ['%projects.api%', '%projects.outsource%', '%projects.paysheet%']
