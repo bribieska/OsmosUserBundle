@@ -18,6 +18,16 @@ After that and hoping that all will be ok, we execute the follow command
 composer update osmos/osmos-user-bundle
 ```
 
+We need to type on config.yml file the lines below
+
+```
+osmos_user:
+    projects:
+        api: "url/where/is/located/this/project"
+        outsource: "url/where/is/located/this/project"
+        paysheet: "url/where/is/located/this/project"
+```
+
 Finally, don't forget to put the instance from bundle on appKernel.php
 
 ``` php
