@@ -34,7 +34,7 @@ class RequestHandler{
 
         $result = curl_exec($c);
         curl_close($c);
-        return $result;
+        return json_decode($result, true);
     }
 
     /**
