@@ -16,6 +16,7 @@ class User extends RequestHandler
     public static $OUTSOURCE_PREFIX = "";
     public static $PAYSHEET_PREFIX  = "";
     public static $API_PREFIX       = "";
+    public static $API_USERS        = "";
 
     public static $DELETE_METHOD    = "DELETE";
     public static $POST_METHOD      = "POST";
@@ -26,7 +27,12 @@ class User extends RequestHandler
 
     public static $URL_NEWDOCUMENTTYPE = "/documents/new_file_type/{users}";
 
-
+    /**
+     * User constructor.
+     * @param $api
+     * @param $outsource
+     * @param $paysheet
+     */
     public function __construct($api, $outsource, $paysheet)
     {
         self::$API_PREFIX       = $api;
@@ -39,6 +45,19 @@ class User extends RequestHandler
         $url = $this->parseURL(self::$OUTSOURCE_PREFIX . self::$URL_GETGROUPSBYCOMPANY, array("company_id" => $company_id));
 
         return $this->doRequest(self::$GET_METHOD, $url);
+    }
+
+    /**
+     * @param $users
+     * @return string
+     *
+     * Add new document type for each user by company
+     */
+    public function addNewDocumentType($users)
+    {
+        $url = $this->parseURL(self::$API_USERS . self::$URL_NEWDOCUMENTTYPE, array("users" => users));
+
+        return $this->doRequest(self::$POST_METHOD, $url);
     }
 
 
