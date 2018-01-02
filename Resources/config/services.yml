@@ -2,3 +2,9 @@ services:
     osmos.user:
         class: OsmosUserBundle\Services\User
         arguments: ['%projects.api%', '%projects.outsource%', '%projects.paysheet%']
+
+    # Only works under Outsource project
+    AppBundle\Service\UserService:
+        public: true
+        arguments:
+            - '@osmos.user'
