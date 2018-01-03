@@ -16,7 +16,7 @@ class User extends RequestHandler
     public static $OUTSOURCE_PREFIX = "";
     public static $PAYSHEET_PREFIX  = "";
     public static $API_PREFIX       = "";
-    public static $API_USERS        = "";
+    public static $API_USERS        = "http://localhost:8089/";
 
     public static $DELETE_METHOD = "DELETE";
     public static $POST_METHOD   = "POST";
